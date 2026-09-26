@@ -1,0 +1,16 @@
+{
+  "name": "BRIEFLY — Personalized Daily News",
+  "short_name": "BRIEFLY",
+  "description": "Your areas. Your interests. Just the news that matters.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F6",
+  "theme_color": "#18181B",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+import { DailyBriefingDTO } from "../dal/dto";
+
+export const MOCK_DAILY_BRIEFING: DailyBriefingDTO = {
+  id: "briefing_2026_09_26",
+  date: "2026-09-26",
+  title: "Your 5-Minute Briefing for Saturday",
+  estimatedMinutes: 5,
+  audioDurationSeconds: 270,
+  items: [
+    {
+      id: "br_item_01",
+      section: "LOCAL",
+      headline: "Pune Metro Line 3 reaches Hinjawadi IT Park",
+      summary: "23km elevated line completes safety trials, offering 25-minute commutes from Shivajinagar starting next month.",
+      location: "Pune",
+      topic: "Technology",
+      readTime: "1 min",
+      storyId: "story_pune_metro_01",
+    },
+    {
+      id: "br_item_02",
+      section: "NATIONAL",
+      headline: "ISRO's 3nm DHRUVA-X chip completes orbital space testing",
+      summary: "First indigenous radiation-hardened processor completes 180 days in space without defect, boosting domestic satellite autonomy.",
+      location: "India",
+      topic: "Science",
+      readTime: "1.5 min",
+      storyId: "story_isro_semiconductor_02",
+    },
+    {
+      id: "br_item_03",
+      section: "WORLD",
+      headline: "Global fusion consortium sustains 1,000-second net energy gain",
+      summary: "Cadarache team achieves continuous 1.2 GW plasma burn with zero disruptions, a landmark for clean baseload power.",
+      location: "World",
+      topic: "Science",
+      readTime: "1.5 min",
+      storyId: "story_global_fusion_04",
+    },
+    {
+      id: "br_item_04",
+      section: "INTEREST",
+      headline: "Geneva AI Summit mandates cryptographic provenance for media",
+      summary: "65 nations ratify C2PA-2026 hardware-level watermark standard to combat deepfakes and preserve digital transparency.",
+      location: "World",
+      topic: "Technology",
+      readTime: "1 min",
+      storyId: "story_global_ai_ethics_09",
+    },
+  ],
+};
