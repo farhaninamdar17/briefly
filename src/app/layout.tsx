@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
+
 import { AuthProvider } from "@/context/AuthContext";
 import { PreferencesProvider } from "@/context/PreferencesContext";
 import { SavedProvider } from "@/context/SavedContext";
@@ -37,12 +39,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-5418898986023842"
+        />
+
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5418898986023842"
           crossOrigin="anonymous"
-        ></script>
+          strategy="beforeInteractive"
+        />
       </head>
+
       <body className="antialiased min-h-screen bg-editorial-bg text-foreground transition-colors selection:bg-editorial-accent selection:text-white">
         <ToastProvider>
           <AuthProvider>
