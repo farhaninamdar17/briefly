@@ -36,6 +36,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5418898986023842"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body className="antialiased min-h-screen bg-editorial-bg text-foreground transition-colors selection:bg-editorial-accent selection:text-white">
         <ToastProvider>
           <AuthProvider>
